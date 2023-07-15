@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/633bd37772.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Book submission</h1>
+  <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+  <div id="book__cards">
+    <!-- Javascript append cards -->
+  </div>
+
+
+
+
+
+
+  <div class="container__form" id="container__form">
+    <div class="close__form">
+      <i class="fa-solid fa-xmark" id="close__form__btn" style="color: #1e1e20; font-size: 30px;"></i>
+    </div>
+    <form id="book__submission" action="/index.html" method="get">
+      <label for="title"><b>Title</b></label>
+      <input type="text" name="title" required min="1" max="100">
+      <label for="author" min="1" max="100"><b>Author</b></label>
+      <input type="text" name="author" required>
+      <label for="pages"><b>Pages</b></label>
+      <input type="number" name="pages" required>
+      <label for="read" type="checkbox" ><b>Read</b></label><br>
+      <input  name="read" type="checkbox" id="checkbox">
+      <label for="read" type="checkbox" value="Yes">Read</label><br>
+      <button class="button__primary" type="submit">Submit</button>
+    </form>
+  </div>
+    <i class="fa-solid fa-circle-plus add__book" id="open__form__btn" style="color: #962715"></i>
+  <script src="script.js"></script>
+</body>
+</html>

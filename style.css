@@ -1,0 +1,90 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#book__cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 40px;
+  padding: 2% 10%
+}
+.book__card{
+  display: flex;
+  /* padding: 0; */
+  box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+  border-radius: 8px;
+}
+
+.card__content{
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.card__image img{
+  height: 100%;
+  width: 100px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+
+
+.add__book{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.add__book{
+  font-size: 50px;
+}
+
+input{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.button__primary{
+  color: #ffffff!important;
+  border-width: 0px!important;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: 700!important;
+  background-color: #962715;
+}
+
+#container__form{
+  display: none;
+  width: 300px;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  padding: 5%;
+  box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  z-index: 9;
+  background-color: white;
+}
+
+.close__form{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#checkbox{
+  width: 5%;
+}
