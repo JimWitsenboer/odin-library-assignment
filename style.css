@@ -8,13 +8,15 @@ body{
   grid-template-rows: 1fr 1fr;
   row-gap: 40px;
   column-gap: 40px;
-  padding: 2% 10%
+  padding: 2% 10%;
 }
 .book__card{
   display: flex;
   /* padding: 0; */
   box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
   border-radius: 8px;
+  position: relative;
+
 }
 
 .card__content{
